@@ -11,7 +11,10 @@ class Color {
     public:
     // the default constructor, which is black
     Color() : red(0), green(0), blue(0) {}
-
+    // the parameter constructor
+    Color(int r, int g, int b) : red(r), green(g), blue(b) {}
+    // the partial constructor, the depth of red
+    Color(int r) : red(r), green(0), blue(0) {}
     // setters and getters for each color(member variable)
     // red 
     void set_red(int input) { red = input; }
@@ -34,6 +37,15 @@ class Color {
 };
 
 int main() {
+    // test the default black
+    Color black;
+    black.print();
+    // test the parameter constructor 
+    Color color1(23, 24 ,33);
+    color1.print();
+    // test the partial constructor
+    Color color2(255);
+    color2.print();
     // first color Klein Blue
     Color Klein_Blue;
     Klein_Blue.set_red(0);
