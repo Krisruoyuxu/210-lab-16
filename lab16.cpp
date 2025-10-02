@@ -10,11 +10,11 @@ class Color {
 
     public:
     // the default constructor, which is black
-    Color() : red(0), green(0), blue(0) {}
+    Color()  {red = 0; green = 0; blue = 0; }
     // the parameter constructor
-    Color(int r, int g, int b) : red(r), green(g), blue(b) {}
+    Color(int r, int g, int b) { red = r; green = g; blue = b; }
     // the partial constructor, the depth of red
-    Color(int r) : red(r), green(0), blue(0) {}
+    Color(int r) { red = r; green = 0; blue = 0; }
     // setters and getters for each color(member variable)
     // red 
     void set_red(int input) { red = input; }
