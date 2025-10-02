@@ -46,7 +46,8 @@ int main() {
     // test the partial constructor
     Color color2(255);
     color2.print();
-    // first color Klein Blue
+
+    // use setters and getters to modify the first color Klein Blue
     Color Klein_Blue;
     Klein_Blue.set_red(0);
     Klein_Blue.set_green(47);
